@@ -1,0 +1,22 @@
+<<<<<<< HEAD
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        #TaskDefinition: "arn:aws:ecs:ap-southeast-1:99999999999999:task-definition/NewMathServiceTask:2"
+        TaskDefinition: <TASK_DEFINITION>
+        LoadBalancerInfo:
+          ContainerName: "MathServiceContainer"
+=======
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        #TaskDefinition: "arn:aws:ecs:ap-southeast-1:99999999999999:task-definition/NewMathServiceTask:2"
+        TaskDefinition: <TASK_DEFINITION>
+        LoadBalancerInfo:
+          ContainerName: "MathServiceContainer"
+>>>>>>> 1c6a49a (TESTCNCAWSDEVOPS)
+          ContainerPort: 8080
